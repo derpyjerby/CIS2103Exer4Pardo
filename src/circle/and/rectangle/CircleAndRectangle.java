@@ -31,11 +31,25 @@ public class CircleAndRectangle {
 
         if(in.equalsIgnoreCase(cir) == TRUE){
         Circle curkel = new Circle();
-        System.out.println("Hi");
-        curkel.getRadius();
+        double mew, arya, ser;
+        mew = curkel.getRadius();
+        curkel.setRadius(mew);
+        arya = curkel.getArea();
+        ser = curkel.getCircumference();
+        curkel.toStreng(mew, arya, ser);
         }else if (in.equalsIgnoreCase(rec) == TRUE){
-            
-        }
-                System.out.println("Weirdo");
+            Rectangle rektangol = new Rectangle();
+            float len, wed;
+            double a, p;
+            len = rektangol.getLength();
+            wed = rektangol.getWidth();
+            rektangol.setLength(len);
+            rektangol.setWidth(wed);
+            a = rektangol.getArea();
+            p = rektangol.getPerimeter();
+            rektangol.toStreng(len, wed, a, p);
+        }else{
+            System.out.println("You misspelled or did not write a valid entry, try again.");
         }
     }
+}
